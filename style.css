@@ -1,0 +1,71 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 0 #d400ff, 4px 4px 0 #00d0ff;
+    margin-bottom: 40px;
+}
+
+#sound-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 500px;
+    width: 90%;
+}
+
+button {
+    background-color: #16213e;
+    color: #00d0ff;
+    border: 2px solid #00d0ff;
+    padding: 15px 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+    text-transform: uppercase;
+    box-shadow: 0 4px #00a0cc;
+}
+
+button:hover {
+    background-color: #00d0ff;
+    color: #16213e;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 #00a0cc;
+}
+
+button:disabled {
+    background-color: #333;
+    border-color: #555;
+    color: #777;
+    cursor: not-allowed;
+    box-shadow: 0 4px #444;
+}
+
+#bgm-button.playing {
+    background-color: #e94560;
+    border-color: #ff577f;
+    color: #1a1a2e;
+    box-shadow: 0 4px #c33c56;
+}
+
+#bgm-button.playing:hover {
+    background-color: #ff577f;
+    color: #1a1a2e;
+}
+
